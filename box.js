@@ -8,8 +8,8 @@ class Box {
       this.body = Bodies.rectangle(x, y, width, height, options);
       this.width = width;
       this.height = height;
-      this.position.x = x ;
-      this.position.y = y;
+      this.x = x ;
+      this.y = y;
       
       World.add(world, this.body);
     }
@@ -21,7 +21,7 @@ class Box {
       rotate(angle);
       rectMode(CENTER);
       fill("red");
-      rect(this.position.x ,this.position.y , this.width, this.height);
+      rect(this.x ,this.y , this.width, this.height);
       pop();
     }
   };
